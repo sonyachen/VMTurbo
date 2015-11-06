@@ -8,6 +8,7 @@ TABLE OF CONTENTS
 :: Header
 :: Content
 :: Footer
+:: Responsive
 **/
 
 /* FONTS */
@@ -46,6 +47,10 @@ a,
 blockquote{
 	color: #fff;
 	margin: 0;
+}
+
+h2{
+	font-weight: 400;
 }
 
 hr{
@@ -92,7 +97,7 @@ header p{
 }
 
 header img{
-	width: 1094px;
+	max-width: 1094px;
 }
 
 
@@ -295,6 +300,7 @@ footer #bottom{
 	height: 70px;
 	background: #fff;
 	font-weight: 300;
+	overflow: hidden;
 }
 
 footer #bottom p{
@@ -329,4 +335,38 @@ footer #bottom a{
 footer #bottom a:hover,
 footer #bottom a:active{
 	color: #000;
+}
+
+
+
+/* RESPONSIVE */
+@media only screen and (max-device-width: 768px){
+	#logobar img{
+		padding-left: 10px;
+	}
+	
+	header img{
+		max-width: 81.8%;
+	}
+	
+	#content img.samsung-edge{
+		max-width: 62.5%;
+	}
+	
+	#content img.samsung-vr{
+		margin-top: 50px;
+		float: left;
+		max-width: 77.7%;
+	}
+	
+	footer .stamps img{
+		padding-top: 10px;
+	}
+	
+	footer #bottom li{
+		padding: 0 8px 0 8px;
+	}
+	footer #bottom a{
+		font-size: 0.75em;
+	}
 }
