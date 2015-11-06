@@ -64,6 +64,7 @@ hr{
 	background-color: #111;
 	line-height: 95px;
 	
+	/* Why did I add this here? Cause it looked like there was one in the image */
 	-webkit-box-shadow: 0px 1px 1px 1px rgba(999,999,999,0.05);
 	-moz-box-shadow: 0px 1px 1px 1px rgba(999,999,999,0.05);
 	box-shadow: 0px 1px 1px 1px rgba(999,999,999,0.05);
@@ -115,6 +116,20 @@ header img{
 		#313131 2px,
 		#313131 6px
 	);
+	background: -webkit-repeating-linear-gradient(
+		-45deg,
+		#262626,
+		#262626 2px,
+		#313131 2px,
+		#313131 6px
+	);
+	background: -moz-repeating-linear-gradient(
+		-45deg,
+		#262626,
+		#262626 2px,
+		#313131 2px,
+		#313131 6px
+	);
 	margin: 0;
 }
 
@@ -138,6 +153,20 @@ header img{
 		#2fa02a 2px,
 		#2fa02a 6px
 	);
+	background: -webkit-repeating-linear-gradient(
+		-45deg,
+		#279822,
+		#279822 2px,
+		#2fa02a 2px,
+		#2fa02a 6px
+	);
+	background: -moz-repeating-linear-gradient(
+		-45deg,
+		#279822,
+		#279822 2px,
+		#2fa02a 2px,
+		#2fa02a 6px
+	);
 	line-height: 62px;
 	border-radius: 3px;
 	border: solid #33af2b 1pt;
@@ -149,6 +178,20 @@ header img{
 
 #content #register-now-btn:hover{
 	background: repeating-linear-gradient(
+		-45deg,
+		#2fa02a,
+		#2fa02a 2px,
+		#3aad35 2px,
+		#3aad35 6px
+	);
+	background: -webkit-repeating-linear-gradient(
+		-45deg,
+		#2fa02a,
+		#2fa02a 2px,
+		#3aad35 2px,
+		#3aad35 6px
+	);
+	background: -moz-repeating-linear-gradient(
 		-45deg,
 		#2fa02a,
 		#2fa02a 2px,
@@ -281,4 +324,9 @@ footer #bottom a{
 	text-transform: uppercase;
 	font-size: 0.85em;
 	letter-spacing: 0.1em;
+}
+
+footer #bottom a:hover,
+footer #bottom a:active{
+	color: #000;
 }
