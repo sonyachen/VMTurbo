@@ -1,0 +1,284 @@
+/**
+---------------------------
+TABLE OF CONTENTS
+---------------------------
+:: Fonts
+:: Shared Styles
+:: Logo Bar
+:: Header
+:: Content
+:: Footer
+**/
+
+/* FONTS */
+@font-face{font-family: 'OpenSans'; src: url('../fonts/Open%20Sans/OpenSans-Regular.ttf');}
+@font-face{font-family: 'OpenSans'; src: url('../fonts/Open%20Sans/OpenSans-Bold.ttf'); font-weight: bold;}
+@font-face{font-family: 'OpenSans'; src: url('../fonts/Open%20Sans/OpenSans-BoldItalic.ttf'); font-weight: bold; font-style: italic;}
+@font-face{font-family: 'OpenSans'; src: url('../fonts/Open%20Sans/OpenSans-ExtraBold.ttf'); font-weight: 800;}
+@font-face{font-family: 'OpenSans'; src: url('../fonts/Open%20Sans/OpenSans-ExtraBoldItalic.ttf');font-weight: 800; font-style: italic;}
+@font-face{font-family: 'OpenSans'; src: url('../fonts/Open%20Sans/OpenSans-Italic.ttf'); font-style: italic;}
+@font-face{font-family: 'OpenSans'; src: url('../fonts/Open%20Sans/OpenSans-Light.ttf'); font-weight: 300;}
+@font-face{font-family: 'OpenSans'; src: url('../fonts/Open%20Sans/OpenSans-LightItalic.ttf'); font-weight: 300; font-style: italic;}
+@font-face{font-family: 'OpenSans'; src: url('../fonts/Open%20Sans/OpenSans-Semibold.ttf'); font-weight: 600;}
+@font-face{font-family: 'OpenSans'; src: url('../fonts/Open%20Sans/OpenSans-SemiboldItalic.ttf'); font-weight: 600; font-style: italic;}
+
+
+/* SHARED STYLES */
+body{
+	font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-color: #111;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+blockquote{
+	color: #fff;
+	margin: 0;
+}
+
+hr{
+	position: absolute;
+	top: -3px;	
+	width: 100%;
+	border: none;
+	margin: 0;
+}
+
+/* LOGO BAR */
+#logobar{
+	position: relative;
+	width: 100%;
+	height: 95px;
+	background-color: #111;
+	line-height: 95px;
+	
+	-webkit-box-shadow: 0px 1px 1px 1px rgba(999,999,999,0.05);
+	-moz-box-shadow: 0px 1px 1px 1px rgba(999,999,999,0.05);
+	box-shadow: 0px 1px 1px 1px rgba(999,999,999,0.05);
+}
+
+#logobar img{
+	vertical-align: middle;
+}
+
+
+/* HEADER */
+header{
+	background: url('../images/header-bg.jpg') no-repeat center center;
+	height: 691px;
+	text-align: center;
+}
+
+header p{
+	font-size: 12pt;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	padding-top: 93px;
+	padding-bottom: 30px;
+	color: #dbdcd7;
+}
+
+header img{
+	width: 1094px;
+}
+
+
+
+/* CONTENT */
+#content{
+	position: relative;
+	background: url('../images/body-bg.jpg') center top;
+	height: auto;
+	padding-top: 106px;
+	padding-bottom: 100px;
+}
+
+#content hr{
+	top: -3px;
+	height: 7px;
+	background: repeating-linear-gradient(
+		-45deg,
+		#262626,
+		#262626 2px,
+		#313131 2px,
+		#313131 6px
+	);
+	margin: 0;
+}
+
+#content #register-now-btn{
+	position: absolute;
+	height: 62px;
+	width: 306px;
+	top: -31px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 15pt;
+	letter-spacing: 0.1em;
+	font-weight: 600;
+	text-align: center;
+	background: repeating-linear-gradient(
+		-45deg,
+		#279822,
+		#279822 2px,
+		#2fa02a 2px,
+		#2fa02a 6px
+	);
+	line-height: 62px;
+	border-radius: 3px;
+	border: solid #33af2b 1pt;
+}
+#content a#register-now-btn{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#content #register-now-btn:hover{
+	background: repeating-linear-gradient(
+		-45deg,
+		#2fa02a,
+		#2fa02a 2px,
+		#3aad35 2px,
+		#3aad35 6px
+	);
+}
+
+#content .text{
+	margin-left: 55px;
+	margin-right: 79px;
+	overflow: hidden;
+}
+
+#content img.samsung-edge{
+	float: left;
+	max-width: 419px;
+	margin-right: 55px;		
+}
+
+#content img.samsung-vr{
+	float: right;
+	max-width: 538px;
+	margin-top: -80px;
+}
+
+#content h2{
+	padding-top: 44px;
+	padding-bottom: 15px;
+	font-size: 1.5em;
+}
+
+#content p{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 0.95em;
+}
+
+#content blockquote{
+	position: relative;
+	margin-top: 20px;
+	font-size: 1.23em;
+}
+#content blockquote:before{
+	content: "\201C";
+	font-family: Georgia, serif;
+	font-size: 100px;
+	float: left;
+	padding-right: 18px;
+	margin-top: -12px;
+}
+
+#content .samsung-vr-content{
+	float: left;
+	margin-top: 60px;
+	margin-left: 15px;
+}
+#content .samsung-vr-content blockquote{
+	margin-top: 70px;
+	max-width: 590px;
+}
+
+
+/* FOOTER */
+footer{
+	background: url('../images/footer-bg.jpg') center top;
+	position: relative;
+	height: auto;
+	padding-top: 195px;
+	text-align: center;
+}
+
+footer hr{
+	height: 52px;
+	background-color: #222;
+}
+
+footer img.cloud-security{
+	position: absolute;
+	left: 50%;
+	margin-left: -134px;
+	top: -62px;
+}
+
+footer h2{
+	max-width: 542px;
+	margin: 0 auto;
+}
+
+footer .stamps{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+footer .stamps img{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+footer #bottom{
+	height: 70px;
+	background: #fff;
+	font-weight: 300;
+}
+
+footer #bottom p{
+	float: left;
+	line-height: 70px;
+	padding-left: 25px;
+	color: #625e5f;
+	font-size: 0.95em;
+}
+
+footer #bottom ul{
+	float: right;
+	margin: 0 17px 0 0;
+	padding: 0;
+	line-height: 70px;
+}
+
+footer #bottom li{
+	list-style: none;
+	display: inline;
+	padding: 0 15px 0 15px; /* Just demonstrating here that I understand how to use padding in one line */
+}
+
+footer #bottom a{
+	color: #625e5f;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.85em;
+	letter-spacing: 0.1em;
+}
